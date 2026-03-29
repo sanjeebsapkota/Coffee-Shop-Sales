@@ -1,120 +1,135 @@
-**Coffee Shop Sales Analysis Dashboard (Excel)**
-📊 Project Overview
+# ☕ Coffee Shop Sales Analysis Dashboard — Excel
 
-This project analyzes coffee shop sales data to understand customer behavior, product performance, and store operations.
-The analysis was performed using Microsoft Excel, where raw transactional data was cleaned, transformed, and used to build an interactive dashboard for business insights.
+> **End-to-end Excel analytics project** — from raw transactional data to an interactive business dashboard — uncovering peak hours, top products, and store performance insights for a multi-location coffee shop chain.
 
-The dashboard helps answer questions such as:
+---
 
-When do customers order the most?
+## 🧩 Business Problem
 
-Which products generate the highest revenue?
+A coffee shop chain with multiple locations needed clarity on three core questions:
 
-Which store locations perform best?
+- **When** are customers ordering — and are we staffed correctly for peak hours?
+- **What** products drive the most revenue — and which underperform?
+- **Where** are the strongest and weakest store locations — and why?
 
-What drink sizes are most popular?
+This dashboard transforms raw POS transaction data into actionable answers for store managers and business owners.
 
-📁 Project Files
-File	Description
-Coffee Shop Sales raw data.xlsx	Original dataset containing raw transaction records
-cafe sales details.xlsx	Cleaned dataset and final Excel dashboard
-Dashboard Screenshot	Preview of the final interactive dashboard
-🧹 Data Cleaning Process
+---
 
-The raw dataset required several preprocessing steps before analysis:
+## 📊 Dashboard KPIs at a Glance
 
-Removed missing and inconsistent records
+| Metric | Value |
+|---|---|
+| 💰 Total Sales | $156,727.76 |
+| 👣 Total Footfall | 33,527 customers |
+| 🧾 Avg Bill Per Person | Calculated dynamically |
+| 📦 Avg Orders Per Person | Calculated dynamically |
 
-Checked for blank values in important fields such as product, quantity, and sales.
+---
 
-Standardized column formats
+## 📁 Project Files
 
-Converted date and time fields into Excel datetime format.
+| File | Description |
+|---|---|
+| `Coffee Shop Sales raw data.xlsx` | Original raw POS transaction records |
+| `cafe sales details.xlsx` | Cleaned dataset + final interactive dashboard |
+| `dashboard_screenshot.png` | Preview of the completed dashboard |
 
-Ensured numeric columns such as quantity, price, and revenue were formatted correctly.
+---
 
-Created derived columns
+## 🧹 Data Cleaning Process
 
-Extracted Hour from the order timestamp to analyze hourly sales patterns.
+The raw dataset required significant preprocessing before analysis could begin:
 
-Extracted Day Name and Month Name for weekday and monthly analysis.
+### Missing & Inconsistent Data
+- Identified and removed blank values across critical fields — product name, quantity, and revenue
+- Standardized inconsistent category labels and product names
 
-Validated product categories
+### Date & Time Transformation
+- Converted raw timestamps into Excel datetime format
+- **Extracted Hour** from order timestamp → enabled hourly sales pattern analysis
+- **Extracted Day Name** → enabled weekday performance comparison
+- **Extracted Month Name** → enabled monthly trend analysis
 
-Grouped products into categories such as Coffee, Tea, Bakery, etc.
+### Data Structuring
+- Ensured numeric columns (quantity, unit price, revenue) were correctly typed for calculations
+- Validated and grouped products into logical categories: Coffee, Tea, Bakery, etc.
+- Organized final output into a structured table to support Pivot Tables and Charts
 
-Prepared structured dataset
+---
 
-Organized data into a clean table format to support pivot tables and charts.
+## 📈 Dashboard Features
 
-📈 Dashboard Features
+### 📊 Visual Insights
 
-The Excel dashboard includes the following visualizations:
+| Chart | Business Question Answered |
+|---|---|
+| Sales by Hour | When is peak demand? Are we overstaffed during slow hours? |
+| Category Sales Distribution | Which product categories drive the most revenue? |
+| Drink Size Distribution | What sizes do customers prefer — Small, Regular, or Large? |
+| Store Location Performance | Which locations lead in footfall vs revenue? |
+| Top 5 Products by Revenue | Which individual products should we promote or expand? |
+| Orders by Weekday | Which days are busiest — and which need a promotion boost? |
 
-Key KPIs
+### 🎛️ Interactive Filters (Slicers)
+Users can dynamically filter the entire dashboard by:
+- **Month** — track seasonal or monthly trends
+- **Day of Week** — isolate weekday vs weekend performance
 
-Total Sales: $156,727.76
+---
 
-Total Footfall: 33,527 customers
+## 💡 Key Business Insights
 
-Average Bill Per Person
+**1. Morning hours drive the most orders**
+Peak ordering occurs in the morning, confirming classic coffee shop behavior. Staffing and inventory should be front-loaded to morning shifts to reduce wait times and avoid stockouts.
 
-Average Order Per Person
+**2. Coffee dominates revenue — but bakery is the hidden upsell opportunity**
+Coffee products lead total sales, with bakery items following. Bundling bakery items with coffee orders (e.g. "add a muffin for X") could increase average bill per person significantly.
 
-Visual Insights
+**3. Regular and Large sizes outsell Small**
+Customers prefer larger sizes — pricing strategy should reflect this. Consider promotional nudges toward Large (e.g. "upgrade for just $0.50").
 
-Sales by Hour
+**4. Revenue per footfall varies across locations**
+Some stores generate higher revenue despite similar customer traffic — indicating stronger product mix or upselling behavior. These locations can serve as best-practice benchmarks for underperforming stores.
 
-Shows peak ordering times during the day.
+**5. Weekday patterns reveal promotion opportunities**
+Slower weekdays identified in the analysis are prime targets for limited-time offers or loyalty point multipliers to drive traffic.
 
-Category Sales Distribution
+---
 
-Identifies which product categories contribute most to revenue.
+## 🛠️ Tools & Excel Features Used
 
-Drink Size Distribution
+| Feature | Purpose |
+|---|---|
+| Data Cleaning | Standardization, null removal, type correction |
+| Derived Columns | Hour, Day Name, Month Name extraction |
+| Pivot Tables | Dynamic aggregation for all charts |
+| Pivot Charts | Visual representation of sales data |
+| Slicers | Interactive Month and Day filters |
+| Dashboard Design | KPI cards, layout, and formatting |
 
-Shows customer preference for Small, Regular, or Large sizes.
+---
 
-Store Location Performance
+## 🚀 How to Use
 
-Compares footfall and sales across store locations.
+1. Download `cafe sales details.xlsx`
+2. Open in Microsoft Excel (2016 or later recommended)
+3. Navigate to the **Dashboard** sheet
+4. Use the **Month** and **Day** slicers on the left to filter all visuals dynamically
+5. Hover over charts for detailed data tooltips
 
-Top 5 Products
+---
 
-Highlights the best-performing products based on revenue.
 
-Orders by Weekday
 
-Identifies the busiest days of the week.
 
-Interactive Filters
+## 👤 Author
 
-Users can filter the dashboard by:
+**Sanjeeb Sapkota** | Data & Business Analytics | Excel | Power BI | Tableau | Python | SAP B1
 
-Month
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sanjeeb%20Sapkota-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sanjeeb-sapkota-07b625226)
+[![GitHub](https://img.shields.io/badge/GitHub-sanjeebsapkota-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sanjeebsapkota)
 
-Day of the week
+---
 
-🛠 Tools Used
-
-Microsoft Excel
-
-Data Cleaning
-
-Pivot Tables
-
-Pivot Charts
-
-Dashboard Design
-
-Slicers for interactivity
-
-📌 Key Business Insights
-
-Morning hours show the highest order volume, indicating peak coffee demand.
-
-Coffee products dominate total sales, followed by bakery items.
-
-Regular and Large drink sizes are ordered more frequently than small sizes.
-
-Some store locations generate higher revenue despite similar footfall, indicating stronger product sales.
+*⭐ Star this repo if you found it useful!*
